@@ -9,6 +9,8 @@ class RecentlyPlayed extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
@@ -24,7 +26,7 @@ class RecentlyPlayed extends StatelessWidget {
             height: 20,
           ),
           Container(
-            height: 150,
+            height: screenHeight*0.25,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: ((context, index) {
@@ -33,8 +35,8 @@ class RecentlyPlayed extends StatelessWidget {
                     child: Column(
                       children: [
                         Container(
-                          height: 100,
-                          width: 100,
+                          height: screenHeight*0.15,
+                          width: screenWidth*0.28,
                           decoration: isCircle
                               ?  BoxDecoration(
                                 border: Border.all(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jiosavan_clone/color/colors.dart';
+import 'package:jiosavan_clone/page/audio_detail_page.dart';
 import 'package:jiosavan_clone/page/auth_page/welcom_page.dart';
 import 'package:jiosavan_clone/page/nav_bar/main_page.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: AppColor.mainColor,
         primarySwatch: Colors.blue,
       ),
-      home: const MainPage(),
+      home: const AudioDetailPage(),
     );
   }
 }
